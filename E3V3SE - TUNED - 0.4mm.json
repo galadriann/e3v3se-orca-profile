@@ -1,6 +1,6 @@
 {
     "auxiliary_fan": "0",
-    "bed_custom_model": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Creality\\\\creality_ender3v2_buildplate_model.stl",
+    "bed_custom_model": "C:\\\\Users\\\\stuar\\\\Documents\\\\ender 3 v3 se bed model.stl",
     "bed_custom_texture": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Creality\\\\creality_ender3s1_buildplate_texture.png",
     "bed_exclude_area": [
         "0x0"
@@ -14,9 +14,9 @@
     "default_filament_profile": [
         "Creality Generic PLA"
     ],
-    "default_print_profile": "PLA - 0.20mm",
+    "default_print_profile": "0.20mm Standard @Creality Ender3V2",
     "deretraction_speed": [
-        "25"
+        "35"
     ],
     "enable_filament_ramming": "1",
     "extra_loading_move": "-2",
@@ -109,7 +109,7 @@
         "0"
     ],
     "machine_pause_gcode": "M25 ;pause print",
-    "machine_start_gcode": "M220 S100 ;Reset Feedrate\nM221 S100 ;Reset Flowrate\n\nG28 ;Home\n\nM420 S1; Enable mesh leveling\n\nM413 S0 ;Disable Powr-Loss Recovery\n\nG92 E0 ;Reset Extruder\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X5 Y20 Z0.28 F5000.0 ;Move to start position\nM190 S[bed_temperature_initial_layer] ; wait for bed temp to stabilize\nM109 S[nozzle_temperature_initial_layer] ; wait for nozzle temp to stabilize\nG1 X5 Y145.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X5.3 Y145.0 Z0.28 F5000.0 ;Move to side a little\nG1 X5.3 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0  ;Reset Extruder\nG1 E-1.0000 F1800 ;Retract a bit\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 E0.0000 F1800\nG92 E0  ;Reset Extruder\n",
+    "machine_start_gcode": "M220 S100 ;Reset Feedrate\nM221 S100 ;Reset Flowrate\n\nG28 ;Home\n\nM420 S1; Enable mesh leveling\n\nM413 S0 ;Disable Powr-Loss Recovery\n\nG92 E0 ;Reset Extruder\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X-3.5 Y20 Z0.28 F5000.0 ;Move to start position\nM190 S[bed_temperature_initial_layer] ; wait for bed temp to stabilize\nM109 S[nozzle_temperature_initial_layer] ; wait for nozzle temp to stabilize\nG1 X-3.5 Y145.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X-3.2 Y145.0 Z0.28 F5000.0 ;Move to side a little\nG1 X-3.2 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0  ;Reset Extruder\nG1 E-1.0000 F1800 ;Retract a bit\nG1 Z0.56 F3000 ;Move Z Axis up\nG1 E0.0000 F1800\nG92 E0  ;Reset Extruder\n",
     "machine_unload_filament_time": "0",
     "manual_filament_change": "1",
     "max_layer_height": [
@@ -126,13 +126,13 @@
     "nozzle_type": "brass",
     "nozzle_volume": "0",
     "parking_pos_retraction": "92",
-    "print_host": "local.host",
+    "print_host": "192.168.20.17:5000",
     "print_host_webui": "",
     "printable_area": [
-        "5x5",
-        "225x5",
-        "225x225",
-        "5x225"
+        "0x0",
+        "220x0",
+        "220x220",
+        "0x220"
     ],
     "printable_height": "250",
     "printer_model": "Creality Ender-3 V2",
@@ -141,7 +141,7 @@
     "printer_structure": "undefine",
     "printer_technology": "FFF",
     "printer_variant": "0.4",
-    "printhost_apikey": "YOURKEYHERE",
+    "printhost_apikey": "877251E0CCB84B85B9A6D13618AD78A8",
     "printhost_authorization_type": "key",
     "printhost_cafile": "",
     "printhost_password": "",
