@@ -34,5 +34,5 @@ Remember to double check your print settings for things like support, brims and 
     - Effectively you should now see the nozzle draw its prime line within the graphic on the build-plate (draws it longer)
       meaning any brims or skirts should no longer interfere with the priming line.
 
-  - I HIGHLY ADVISE TO ADJUST YOUR OWN FILAMENT PROFILES!!
+  - I HIGHLY ADVISE TO ADJUST YOUR OWN FILAMENT PROFILES!! (and x-y hole/contour compensation)
   - These profiles work for me and haven't had any issues - always watch your first layer, if it's not perfect, the rest of your print wont be :)
