@@ -1,0 +1,214 @@
+{
+    "auxiliary_fan": "0",
+    "bed_custom_model": "C:\\\\Users\\\\stuar\\\\Documents\\\\ender 3 v3 se bed model.stl",
+    "bed_custom_texture": "C:\\\\Program Files\\\\OrcaSlicer\\\\resources\\\\profiles\\\\Creality\\\\creality_ender3s1_buildplate_texture.png",
+    "bed_exclude_area": [
+        "0x0"
+    ],
+    "before_layer_change_gcode": "G92 E0\n",
+    "best_object_pos": "0.5,0.5",
+    "change_extrusion_role_gcode": "",
+    "change_filament_gcode": "",
+    "cooling_tube_length": "5",
+    "cooling_tube_retraction": "91.5",
+    "default_filament_profile": [
+        "Creality Generic PLA"
+    ],
+    "default_print_profile": "0.20mm Standard @Creality Ender3V2",
+    "deretraction_speed": [
+        "35"
+    ],
+    "enable_filament_ramming": "1",
+    "extra_loading_move": "-2",
+    "extruder_clearance_height_to_lid": "100",
+    "extruder_clearance_height_to_rod": "34",
+    "extruder_clearance_radius": "47",
+    "extruder_colour": [
+        "#FCE94F"
+    ],
+    "extruder_offset": [
+        "0x0"
+    ],
+    "fan_kickstart": "0",
+    "fan_speedup_overhangs": "0",
+    "fan_speedup_time": "0",
+    "from": "",
+    "gcode_flavor": "marlin",
+    "high_current_on_filament_swap": "0",
+    "host_type": "octoprint",
+    "inherits": "Creality Ender-3 V2 0.4 nozzle",
+    "layer_change_gcode": ";LAYER:[layer_num]",
+    "machine_end_gcode": "G91 ;Relative positioning\nG1 E-2 F2700 ;Retract a bit\nG1 E-4 Z0.2 F2400 ;Retract and raise Z\nG1 X5 Y5 F3000 ;Wipe out\nG1 E-2 Z10 ;Raise Z more\nG90 ;Absolute positioning\n\nG1 X0 Y220 ;Present print\nM106 S0 ;Turn-off fan\nM104 S0 ;Turn-off hotend\nM140 S0 ;Turn-off bed\n\nM84 X Y E ;Disable all steppers but Z\n",
+    "machine_load_filament_time": "0",
+    "machine_max_acceleration_e": [
+        "2500",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "2500",
+        "500"
+    ],
+    "machine_max_acceleration_retracting": [
+        "1000",
+        "1000"
+    ],
+    "machine_max_acceleration_travel": [
+        "500",
+        "500"
+    ],
+    "machine_max_acceleration_x": [
+        "2500",
+        "500"
+    ],
+    "machine_max_acceleration_y": [
+        "2500",
+        "500"
+    ],
+    "machine_max_acceleration_z": [
+        "200",
+        "100"
+    ],
+    "machine_max_jerk_e": [
+        "2.5",
+        "5"
+    ],
+    "machine_max_jerk_x": [
+        "8",
+        "8"
+    ],
+    "machine_max_jerk_y": [
+        "8",
+        "8"
+    ],
+    "machine_max_jerk_z": [
+        "0.4",
+        "0.4"
+    ],
+    "machine_max_speed_e": [
+        "50",
+        "60"
+    ],
+    "machine_max_speed_x": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_y": [
+        "500",
+        "500"
+    ],
+    "machine_max_speed_z": [
+        "5",
+        "10"
+    ],
+    "machine_min_extruding_rate": [
+        "0",
+        "0"
+    ],
+    "machine_min_travel_rate": [
+        "0",
+        "0"
+    ],
+    "machine_pause_gcode": "M25 ;pause print",
+    "machine_start_gcode": "\nM220 S100 ;Reset Feedrate\nM221 S100 ;Reset Flowrate\n\nG28 ;Home\n\nM420 S1; Enable mesh leveling\n\nM413 S0 ;Disable Powr-Loss Recovery\n\nG92 E0 ;Reset Extruder\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X-3.5 Y20 Z0.28 F5000.0 ;Move to start position\nM190 S[bed_temperature_initial_layer] ; wait for bed temp to stabilize\nM109 S[nozzle_temperature_initial_layer] ; wait for nozzle temp to stabilize\nG1 X-3.5 Y145.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X-3.2 Y145.0 Z0.28 F5000.0 ;Move to side a little\nG1 X-3.2 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0  ;Reset Extruder\nG1 E-1.0000 F1800 ;Retract a bit\nG1 Z0.56 F3000 ;Move Z Axis up\nG1 E0.0000 F1800\nG92 E0  ;Reset Extruder\n",
+    "machine_unload_filament_time": "0",
+    "manual_filament_change": "1",
+    "max_layer_height": [
+        "0.32"
+    ],
+    "min_layer_height": [
+        "0.08"
+    ],
+    "name": "E3V3SE - TUNED - 0.4mm",
+    "nozzle_diameter": [
+        "0.4"
+    ],
+    "nozzle_hrc": "0",
+    "nozzle_type": "brass",
+    "nozzle_volume": "0",
+    "parking_pos_retraction": "92",
+    "print_host": "192.168.20.17:5000",
+    "print_host_webui": "",
+    "printable_area": [
+        "0x0",
+        "220x0",
+        "220x220",
+        "0x220"
+    ],
+    "printable_height": "250",
+    "printer_model": "Creality Ender-3 V2",
+    "printer_notes": "",
+    "printer_settings_id": "E3V3SE - TUNED - 0.4mm",
+    "printer_structure": "undefine",
+    "printer_technology": "FFF",
+    "printer_variant": "0.4",
+    "printhost_apikey": "877251E0CCB84B85B9A6D13618AD78A8",
+    "printhost_authorization_type": "key",
+    "printhost_cafile": "",
+    "printhost_password": "",
+    "printhost_port": "",
+    "printhost_ssl_ignore_revoke": "0",
+    "printhost_user": "",
+    "purge_in_prime_tower": "1",
+    "retract_before_wipe": [
+        "0%"
+    ],
+    "retract_length_toolchange": [
+        "2"
+    ],
+    "retract_lift_above": [
+        "0"
+    ],
+    "retract_lift_below": [
+        "0"
+    ],
+    "retract_lift_enforce": [
+        "All Surfaces"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_length": [
+        "1"
+    ],
+    "retraction_minimum_travel": [
+        "1"
+    ],
+    "retraction_speed": [
+        "25"
+    ],
+    "scan_first_layer": "0",
+    "silent_mode": "0",
+    "single_extruder_multi_material": "1",
+    "support_air_filtration": "1",
+    "support_chamber_temp_control": "1",
+    "template_custom_gcode": "",
+    "thumbnails": [
+        "300x300"
+    ],
+    "thumbnails_format": "PNG",
+    "time_cost": "0",
+    "time_lapse_gcode": "",
+    "upward_compatible_machine": [],
+    "use_firmware_retraction": "0",
+    "use_relative_e_distances": "1",
+    "version": "1.7.0.0",
+    "wipe": [
+        "1"
+    ],
+    "wipe_distance": [
+        "3"
+    ],
+    "z_hop": [
+        "0"
+    ],
+    "z_hop_types": [
+        "Normal Lift"
+    ],
+    "z_offset": "0"
+}
