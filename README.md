@@ -9,9 +9,7 @@ Things I've focused on:
   - Retraction - Speed and accel greatly decresed from most stock profiles, resulting in MUCH quieter retractions and minimal strining.
   - No Z-hop :) - Helps with stringing.
   - X-Y home - to match endstops
-  - Originally I had a custom bed model/texture to address the black buildplate bug. That bug has since been addressed in the 1.8.0 Release
-    so reverted the buildplate and texture to default E3V2. If you run into problems in the future my fix was to convert the png to svg and then
-    use the E3S1 model but moved the models orgin to FL corner.
+  - Custom bed model - altered priming location to allow more room for printing (explained below)
   - The skirt I use is 2 really slow loops on 1st layer only.
     The reason for this is to reduce the flow after priming so that when beginning the print, the slow initial layers, there is very small chance for
     oozing to occur, this has resulted in outstanding first layers in both PLA and PETG.
