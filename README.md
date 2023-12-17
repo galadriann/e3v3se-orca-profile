@@ -6,7 +6,7 @@ I've been tuning my profile in OrcaSlicer for the E3V3SE. By default it is tuned
 
 Things I've focused on:
   - Speed and acceleration decrease - Most stock profiles bump the accel to max which I have found to be too quick for the speeds required.
-  - Retraction - Speed and accel greatly decresed from most stock profiles, resulting in MUCH quitier retractions and minimal strining.
+  - Retraction - Speed and accel greatly decresed from most stock profiles, resulting in MUCH quieter retractions and minimal strining.
   - No Z-hop :) - Helps with stringing.
   - X-Y home - to match endstops
   - Originally I had a custom bed model/texture to address the black buildplate bug. That bug has since been addressed in the 1.8.0 Release
