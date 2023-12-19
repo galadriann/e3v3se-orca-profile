@@ -34,3 +34,11 @@ Remember to double check your print settings for things like support, brims and 
 
   - I HIGHLY ADVISE TO ADJUST YOUR OWN FILAMENT PROFILES!! (and x-y hole/contour compensation)
   - These profiles work for me and haven't had any issues - always watch your first layer, if it's not perfect, the rest of your print wont be :)
+
+**UPDATE 20/12/2023**
+
+  - Disabled "ensure vertical all thickness" - enabled adds time for know notice in print quality or strength. By all means use this as nessacery, but just turning it off by default
+  - Default speeds: Yes, the speeds are lower than creality default, main reason is for quality. Feel free to experiment, I have found myself increasing the speeds for parts that
+    don't require a good surface finish or dont need to be dimensionally accurate.
+  - Added Silk PLA print profile (even lower speeds :)) and filament profile. First time experimenting with Silk PLA - so might not be perfect, but was happy with the initial results.
+    Filament used for this profile is eSUN ePLA Silk dual-color
