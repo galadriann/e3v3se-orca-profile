@@ -41,11 +41,11 @@
     "machine_end_gcode": "G91 ;Relative positioning\nG1 E-2 F2700 ;Retract a bit\nG1 E-4 Z0.2 F2400 ;Retract and raise Z\nG1 X5 Y5 F3000 ;Wipe out\nG1 E-2 Z10 ;Raise Z more\nG90 ;Absolute positioning\n\nG1 X0 Y220 ;Present print\nM106 S0 ;Turn-off fan\nM104 S0 ;Turn-off hotend\nM140 S0 ;Turn-off bed\n\nM84 X Y E ;Disable all steppers but Z\n",
     "machine_load_filament_time": "0",
     "machine_max_acceleration_e": [
-        "2500",
+        "2000",
         "5000"
     ],
     "machine_max_acceleration_extruding": [
-        "2500",
+        "2000",
         "500"
     ],
     "machine_max_acceleration_retracting": [
@@ -57,11 +57,11 @@
         "500"
     ],
     "machine_max_acceleration_x": [
-        "2500",
+        "2000",
         "500"
     ],
     "machine_max_acceleration_y": [
-        "2500",
+        "2000",
         "500"
     ],
     "machine_max_acceleration_z": [
@@ -73,11 +73,11 @@
         "5"
     ],
     "machine_max_jerk_x": [
-        "8",
+        "7",
         "8"
     ],
     "machine_max_jerk_y": [
-        "8",
+        "7",
         "8"
     ],
     "machine_max_jerk_z": [
@@ -89,11 +89,11 @@
         "60"
     ],
     "machine_max_speed_x": [
-        "500",
+        "250",
         "500"
     ],
     "machine_max_speed_y": [
-        "500",
+        "250",
         "500"
     ],
     "machine_max_speed_z": [
@@ -171,7 +171,7 @@
         "0"
     ],
     "retract_when_changing_layer": [
-        "0"
+        "1"
     ],
     "retraction_length": [
         "1"
