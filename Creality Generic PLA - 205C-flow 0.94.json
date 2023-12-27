@@ -1,0 +1,25 @@
+{
+    "filament_flow_ratio": [
+        "0.94"
+    ],
+    "filament_settings_id": [
+        "Creality Generic PLA - 205C-flow 0.94"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "50"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "50"
+    ],
+    "inherits": "Creality Generic PLA",
+    "is_custom_defined": "0",
+    "name": "Creality Generic PLA - 205C-flow 0.94",
+    "nozzle_temperature": [
+        "205"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "205"
+    ],
+    "version": "1.7.0.0"
+}

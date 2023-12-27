@@ -1,0 +1,69 @@
+{
+    "deretraction_speed": [
+        "35"
+    ],
+    "from": "User",
+    "gcode_flavor": "marlin2",
+    "inherits": "Creality Ender-3 V2 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "G91 ;Relative positioning\nG1 E-2 F2700 ;Retract a bit\nG1 E-2 Z0.2 F2400 ;Retract and raise Z\nG1 X5 Y5 F3000 ;Wipe out\nG1 Z10 ;Raise Z more\nG90 ;Absolute positioning\n\nG1 X0 Y{print_bed_max[1]*0.8} F{travel_speed*60} ;\n\nM106 S0 ;Turn-off fan\nM104 S0 ;Turn-off hotend\nM140 S0 ;Turn-off bed\n\nM84 X Y E ;Disable all steppers but Z",
+    "machine_max_acceleration_extruding": [
+        "5000",
+        "500"
+    ],
+    "machine_max_acceleration_x": [
+        "5000",
+        "500"
+    ],
+    "machine_max_acceleration_y": [
+        "5000",
+        "500"
+    ],
+    "machine_max_acceleration_z": [
+        "500",
+        "100"
+    ],
+    "machine_max_jerk_x": [
+        "10",
+        "8"
+    ],
+    "machine_max_jerk_y": [
+        "10",
+        "8"
+    ],
+    "machine_max_speed_e": [
+        "100",
+        "60"
+    ],
+    "machine_max_speed_z": [
+        "30",
+        "10"
+    ],
+    "machine_start_gcode": "; Ender 3v3 Custom Start G-code\nM220 S100 ;Reset Feedrate\nM221 S100 ;Reset Flowrate\n\nG92 E0 ; Reset Extruder\nG28 ; Home all axes\nG420 S1. ;uses saved mesh\n;G29 ; Autolevel\n\nM413 S0 ;Disable Powr-Loss Recovery\nM104 S[nozzle_temperature_initial_layer] ; set final nozzle temp\nM190 S[bed_temperature_initial_layer_single] ; wait for bed temp to stabilize\nM109 S[nozzle_temperature_initial_layer] ; wait for nozzle temp to stabilize\nM412 S0 ; filament sensor not present - Marlin FW\nG1 Z2.0 F3000 ;Move Z Axis up\nG1 X10.1 Y20 Z0.28 F5000.0 ;Move to start position\nG1 X10.1 Y145.0 Z0.28 F1500.0 E15 ;Draw the first line\nG1 X10.4 Y145.0 Z0.28 F5000.0 ;Move to side a little\nG1 X10.4 Y20 Z0.28 F1500.0 E30 ;Draw the second line\nG92 E0 ; Reset Extruder\nG1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed\nG1 E0.0000 F1800 \n",
+    "name": "Creality Ender-3 V3",
+    "nozzle_type": "brass",
+    "printer_settings_id": "Creality Ender-3 V3",
+    "retract_before_wipe": [
+        "0%"
+    ],
+    "retraction_length": [
+        "0.8"
+    ],
+    "retraction_minimum_travel": [
+        "1"
+    ],
+    "retraction_speed": [
+        "25"
+    ],
+    "thumbnails": [
+        "230x180"
+    ],
+    "thumbnails_format": "JPG",
+    "version": "1.7.0.0",
+    "wipe_distance": [
+        "3"
+    ],
+    "z_hop": [
+        "0"
+    ]
+}

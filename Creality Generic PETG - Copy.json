@@ -1,0 +1,31 @@
+{
+    "default_filament_colour": [
+        "#FFFFFF"
+    ],
+    "fan_max_speed": [
+        "70"
+    ],
+    "fan_min_speed": [
+        "20"
+    ],
+    "filament_settings_id": [
+        "Creality Generic PETG - Copy"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "70"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "70"
+    ],
+    "inherits": "Creality Generic PETG",
+    "is_custom_defined": "0",
+    "name": "Creality Generic PETG - Copy",
+    "nozzle_temperature": [
+        "235"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "235"
+    ],
+    "version": "1.6.2.0"
+}
